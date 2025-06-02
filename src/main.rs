@@ -16,6 +16,26 @@ fn main() {
     main_operations();
 }
 
+fn main_data_types() {
+    integer_data_types();
+    floating_point_data_types();
+    boolean_data_type();
+    character_data_type();
+    string_data_type();
+}
+fn main_operations() {
+    let x = 10;
+    let y = 5;
+
+    println!("Performing operations on {} and {}", x, y);
+
+    println!("Addition: {}", adition(x, y));
+    println!("Subtraction: {}", subtraction(x, y));
+    println!("Multiplication: {}", multiplication(x, y));
+    println!("Division: {}", division(x, y));
+    println!("Modulus: {}", modulus(x, y));
+}
+
 fn integer_data_types() {
     let a: i32 = 10; // 32-bit signed integer
     let b: u32 = 20; // 32-bit unsigned integer
@@ -66,24 +86,4 @@ fn modulus(a: i32, b: i32) -> i32 {
         panic!("Cannot perform modulus by zero!"); // This will panic if b is zero
     }
     a % b // This function returns the remainder of the division of two integers
-}
-
-fn main_data_types() {
-    integer_data_types();
-    floating_point_data_types();
-    boolean_data_type();
-    character_data_type();
-    string_data_type();
-}
-fn main_operations() {
-    let x = 10;
-    let y = 5;
-
-    println!("Performing operations on {} and {}", x, y);
-
-    println!("Addition: {}", adition(x, y));
-    println!("Subtraction: {}", subtraction(x, y));
-    println!("Multiplication: {}", multiplication(x, y));
-    println!("Division: {}", division(x, y));
-    println!("Modulus: {}", modulus(x, y));
 }
