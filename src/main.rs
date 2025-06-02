@@ -79,6 +79,8 @@ fn main_operations() {
     let x = 10;
     let y = 5;
 
+    println!("Performing operations on {} and {}", x, y);
+
     println!("Addition: {}", adition(x, y));
     println!("Subtraction: {}", subtraction(x, y));
     println!("Multiplication: {}", multiplication(x, y));
