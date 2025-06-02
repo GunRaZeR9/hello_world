@@ -3,8 +3,12 @@
 // Make sure you have Rust installed and set up correctly.
 fn main() {
     
-    let x = 10;
+    let mut x = 10; // This line declares a mutable variable x and initializes it with the value 10
 
-    println!("x is a{}", x);
+    println!("x is a {}", x); // This line prints the value of x to the console
+
+    x = 20;
+    
+    println!("x is now a {}", x); // This line prints the updated value of x to the console
 
 }
